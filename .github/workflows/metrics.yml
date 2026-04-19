@@ -1,7 +1,10 @@
 name: Metrics
 on:
-  schedule: [{cron: "0 */12 * * *"}] # Aktualizacja co 12h
+  # Aktualizacja co 12h
+  schedule: [{cron: "0 */12 * * *"}]
+  # Możliwość ręcznego uruchomienia
   workflow_dispatch:
+  # Aktualizacja po wypchnięciu zmian
   push: {branches: ["master", "main"]}
 
 jobs:
@@ -10,22 +13,37 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@v3
         with:
+          # --- KONFIGURACJA KLUCZOWA ---
           token: ${{ secrets.METRICS_TOKEN }}
           user: MatiM72737
-          template: classic
-          config_timezone: Europe/Warsaw
-          
-          # Podstawowe sekcje
+          template: classic  # Używamy szablonu klasycznego, ale go "podkręcamy"
           base: header, activity, community, repositories, metadata
           
-          # Konfiguracja języków (to, o co prosiłeś)
-          plugin_languages: yes
-          plugin_languages_details: bytes-size, percentage # Wyświetli liczby i procenty
-          plugin_languages_threshold: 0%
-          plugin_languages_limit: 8
+          # --- ESTETYKA ---
+          config_timezone: Europe/Warsaw
+          # TO JEST KLUCZOWE: Włącza nowoczesne, kolorowe ikony (zamiast technicznych)
+          config_icons: yes
+          # Zmienia styl sekcji na karty z obramowaniem (fajny efekt "pływania")
+          config_sections: yes
+          # Możesz wybrać motyw: tokyonight (mój typ), dracula, github_dark, grubvox
+          config_theme: tokyonight 
           
-          # Dodatkowe bajery
-          plugin_isocalendar: yes # Kalendarz aktywności
-          plugin_lines: yes       # Statystyki linii kodu
+          # --- JĘZYKI (Z liczbami i ładnym paskiem) ---
+          plugin_languages: yes
+          plugin_languages_ignored: # Ignorujemy niepotrzebne
+            html, css, javascript, makefile, roff, shell
+          plugin_languages_details: bytes-size, percentage # Liczby, których chciałeś
+          plugin_languages_sections: most-used # Wyświetla tylko najważniejsze
+          plugin_languages_limit: 8
+          plugin_languages_threshold: 0%
+          # plugin_languages_indepth: yes # Odkomentuj, jeśli chcesz bardzo dokładne statystyki (wymaga czasu)
+
+          # --- BAJERY DLA "ŁADNOŚCI" ---
+          # Kalendarz aktywności (ale bez 3D, żeby był czytelniejszy w kartach)
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          
+          # Statystyki linii kodu
+          plugin_lines: yes
