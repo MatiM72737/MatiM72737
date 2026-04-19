@@ -2,20 +2,17 @@
 
 ![Background](./banner.png)
 
-<br/>
-
 <!-- Social / Rzesoft -->
-<p>
-  <a href="https://linkedin.com/in/mazur-mateusz">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-
-  <a href="https://github.com/rzesoft">
-    <img src="https://img.shields.io/badge/Proud%20member%20of-Rzesoft-white?style=for-the-badge&logo=github&logoColor=0c1877"/>
-  </a>
+<p align="center">
+  <a href="https://linkedin.com/in/mazur-mateusz"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <span style="margin: 0 12px;"></span>
+  <a href="https://github.com/rzesoft"><img src="https://img.shields.io/badge/Proud%20member%20of-Rzesoft-0c1877?style=for-the-badge&logo=github&logoColor=white" alt="Rzesoft"/></a>
 </p>
 
+---
+
 ### 💻 Tech Stack
+
 <p>
   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/>
   <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/>
@@ -28,6 +25,8 @@
   <img src="https://img.shields.io/badge/Artix_Linux-12a0da?style=for-the-badge&logo=artix-linux&logoColor=white"/>
   <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"/>
 </p>
+
+---
 
 ## 📊 GitHub Analytics
 
@@ -42,10 +41,10 @@
 </tr>
 </table>
 
-
-<br/>
+---
 
 ### 📈 Activity
+
 <img src="https://github.com/MatiM72737/MatiM72737/blob/output/github-contribution-grid-snake-dark.svg"/>
 
 </div>
