@@ -28,7 +28,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=MatiM72737&layout=donut-vertical&theme=tokyonight&hide_border=true&bg_color=00000000&size_weight=0.5&count_weight=0.5&langs_count=10
+          options: username=MatiM72737&layout=normal&theme=tokyonight&hide_border=true&bg_color=00000000&size_weight=0.5&count_weight=0.5&langs_count=10
           path: profile/top-langs.svg
           token: ${{ secrets.METRICS_TOKEN }}
 
