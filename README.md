@@ -6,7 +6,7 @@
 <p align="center">
   <a href="https://linkedin.com/in/mazur-mateusz"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <span style="margin: 0 12px;"></span>
-  <a href="https://github.com/rzesoft"><img src="https://img.shields.io/badge/Proud%20member%20of-Rzesoft-0c1877?style=for-the-badge&logo=github&logoColor=white" alt="Rzesoft"/></a>
+  <a href="https://github.com/rzesoft"><img src="https://img.shields.io/badge/Founding%20member%20of-Rzesoft-0c1877?style=for-the-badge&logo=github&logoColor=white" alt="Rzesoft"/></a>
 </p>
 
 ---
