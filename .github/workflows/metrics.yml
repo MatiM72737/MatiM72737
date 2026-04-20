@@ -2,7 +2,7 @@ name: Update GitHub Readme Stats
 
 on:
   schedule:
-    - cron: "0 4 * * *"        # codziennie o 4:00 rano (możesz zmienić)
+    - cron: "0 * * * *"        # codziennie o 4:00 rano (możesz zmienić)
   workflow_dispatch:           # możesz odpalić ręcznie
 
 jobs:
