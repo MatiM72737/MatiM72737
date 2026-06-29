@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Mateusz Mazur's GitHub Stats, Rank: B-</title>
-        <desc id="descId">Total Stars Earned: 0, Total Commits  (last year) : 465, Total PRs: 10, Total Issues: 42, Contributed to (last year): 30</desc>
+        <desc id="descId">Total Stars Earned: 0, Total Commits  (last year) : 446, Total PRs: 10, Total Issues: 42, Contributed to (last year): 30</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 177.0442503266453;
+        stroke-dashoffset: 177.6684179343363;
       }
     }
   
@@ -177,7 +177,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >465</text>
+      >446</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
